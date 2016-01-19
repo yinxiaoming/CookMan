@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		740DC7D61C4DD95F00E029C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D51C4DD95F00E029C8 /* main.m */; };
+		740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D81C4DD95F00E029C8 /* AppDelegate.m */; };
+		740DC7DC1C4DD95F00E029C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7DB1C4DD95F00E029C8 /* ViewController.m */; };
+		740DC7DF1C4DD95F00E029C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7DD1C4DD95F00E029C8 /* Main.storyboard */; };
+		740DC7E11C4DD95F00E029C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7E01C4DD95F00E029C8 /* Assets.xcassets */; };
+		740DC7E41C4DD95F00E029C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7E21C4DD95F00E029C8 /* LaunchScreen.storyboard */; };
+		740DC7EF1C4DD95F00E029C8 /* CookManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7EE1C4DD95F00E029C8 /* CookManTests.m */; };
+		740DC7FA1C4DD95F00E029C8 /* CookManUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7F91C4DD95F00E029C8 /* CookManUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		740DC7EB1C4DD95F00E029C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740DC7C91C4DD95F00E029C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740DC7D01C4DD95F00E029C8;
+			remoteInfo = CookMan;
+		};
+		740DC7F61C4DD95F00E029C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 740DC7C91C4DD95F00E029C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 740DC7D01C4DD95F00E029C8;
+			remoteInfo = CookMan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		740DC7D11C4DD95F00E029C8 /* CookMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		740DC7D51C4DD95F00E029C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		740DC7D71C4DD95F00E029C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		740DC7D81C4DD95F00E029C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		740DC7DA1C4DD95F00E029C8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		740DC7DB1C4DD95F00E029C8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		740DC7DE1C4DD95F00E029C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		740DC7E01C4DD95F00E029C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		740DC7E31C4DD95F00E029C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		740DC7E51C4DD95F00E029C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740DC7EA1C4DD95F00E029C8 /* CookManTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookManTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		740DC7EE1C4DD95F00E029C8 /* CookManTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookManTests.m; sourceTree = "<group>"; };
+		740DC7F01C4DD95F00E029C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		740DC7F51C4DD95F00E029C8 /* CookManUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CookManUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		740DC7F91C4DD95F00E029C8 /* CookManUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookManUITests.m; sourceTree = "<group>"; };
+		740DC7FB1C4DD95F00E029C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		740DC7CE1C4DD95F00E029C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740DC7E71C4DD95F00E029C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740DC7F21C4DD95F00E029C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		740DC7C81C4DD95F00E029C8 = {
+			isa = PBXGroup;
+			children = (
+				740DC7D31C4DD95F00E029C8 /* CookMan */,
+				740DC7ED1C4DD95F00E029C8 /* CookManTests */,
+				740DC7F81C4DD95F00E029C8 /* CookManUITests */,
+				740DC7D21C4DD95F00E029C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		740DC7D21C4DD95F00E029C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				740DC7D11C4DD95F00E029C8 /* CookMan.app */,
+				740DC7EA1C4DD95F00E029C8 /* CookManTests.xctest */,
+				740DC7F51C4DD95F00E029C8 /* CookManUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		740DC7D31C4DD95F00E029C8 /* CookMan */ = {
+			isa = PBXGroup;
+			children = (
+				740DC7D71C4DD95F00E029C8 /* AppDelegate.h */,
+				740DC7D81C4DD95F00E029C8 /* AppDelegate.m */,
+				740DC7DA1C4DD95F00E029C8 /* ViewController.h */,
+				740DC7DB1C4DD95F00E029C8 /* ViewController.m */,
+				740DC7DD1C4DD95F00E029C8 /* Main.storyboard */,
+				740DC7E01C4DD95F00E029C8 /* Assets.xcassets */,
+				740DC7E21C4DD95F00E029C8 /* LaunchScreen.storyboard */,
+				740DC7E51C4DD95F00E029C8 /* Info.plist */,
+				740DC7D41C4DD95F00E029C8 /* Supporting Files */,
+			);
+			path = CookMan;
+			sourceTree = "<group>";
+		};
+		740DC7D41C4DD95F00E029C8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				740DC7D51C4DD95F00E029C8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		740DC7ED1C4DD95F00E029C8 /* CookManTests */ = {
+			isa = PBXGroup;
+			children = (
+				740DC7EE1C4DD95F00E029C8 /* CookManTests.m */,
+				740DC7F01C4DD95F00E029C8 /* Info.plist */,
+			);
+			path = CookManTests;
+			sourceTree = "<group>";
+		};
+		740DC7F81C4DD95F00E029C8 /* CookManUITests */ = {
+			isa = PBXGroup;
+			children = (
+				740DC7F91C4DD95F00E029C8 /* CookManUITests.m */,
+				740DC7FB1C4DD95F00E029C8 /* Info.plist */,
+			);
+			path = CookManUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		740DC7D01C4DD95F00E029C8 /* CookMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740DC7FE1C4DD95F00E029C8 /* Build configuration list for PBXNativeTarget "CookMan" */;
+			buildPhases = (
+				740DC7CD1C4DD95F00E029C8 /* Sources */,
+				740DC7CE1C4DD95F00E029C8 /* Frameworks */,
+				740DC7CF1C4DD95F00E029C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CookMan;
+			productName = CookMan;
+			productReference = 740DC7D11C4DD95F00E029C8 /* CookMan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		740DC7E91C4DD95F00E029C8 /* CookManTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740DC8011C4DD95F00E029C8 /* Build configuration list for PBXNativeTarget "CookManTests" */;
+			buildPhases = (
+				740DC7E61C4DD95F00E029C8 /* Sources */,
+				740DC7E71C4DD95F00E029C8 /* Frameworks */,
+				740DC7E81C4DD95F00E029C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740DC7EC1C4DD95F00E029C8 /* PBXTargetDependency */,
+			);
+			name = CookManTests;
+			productName = CookManTests;
+			productReference = 740DC7EA1C4DD95F00E029C8 /* CookManTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		740DC7F41C4DD95F00E029C8 /* CookManUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740DC8041C4DD95F00E029C8 /* Build configuration list for PBXNativeTarget "CookManUITests" */;
+			buildPhases = (
+				740DC7F11C4DD95F00E029C8 /* Sources */,
+				740DC7F21C4DD95F00E029C8 /* Frameworks */,
+				740DC7F31C4DD95F00E029C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				740DC7F71C4DD95F00E029C8 /* PBXTargetDependency */,
+			);
+			name = CookManUITests;
+			productName = CookManUITests;
+			productReference = 740DC7F51C4DD95F00E029C8 /* CookManUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		740DC7C91C4DD95F00E029C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "尹晓明";
+				TargetAttributes = {
+					740DC7D01C4DD95F00E029C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = LH3UMAEJH5;
+					};
+					740DC7E91C4DD95F00E029C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = LH3UMAEJH5;
+						TestTargetID = 740DC7D01C4DD95F00E029C8;
+					};
+					740DC7F41C4DD95F00E029C8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = LH3UMAEJH5;
+						TestTargetID = 740DC7D01C4DD95F00E029C8;
+					};
+				};
+			};
+			buildConfigurationList = 740DC7CC1C4DD95F00E029C8 /* Build configuration list for PBXProject "CookMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 740DC7C81C4DD95F00E029C8;
+			productRefGroup = 740DC7D21C4DD95F00E029C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				740DC7D01C4DD95F00E029C8 /* CookMan */,
+				740DC7E91C4DD95F00E029C8 /* CookManTests */,
+				740DC7F41C4DD95F00E029C8 /* CookManUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		740DC7CF1C4DD95F00E029C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740DC7E41C4DD95F00E029C8 /* LaunchScreen.storyboard in Resources */,
+				740DC7E11C4DD95F00E029C8 /* Assets.xcassets in Resources */,
+				740DC7DF1C4DD95F00E029C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740DC7E81C4DD95F00E029C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740DC7F31C4DD95F00E029C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		740DC7CD1C4DD95F00E029C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740DC7DC1C4DD95F00E029C8 /* ViewController.m in Sources */,
+				740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */,
+				740DC7D61C4DD95F00E029C8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740DC7E61C4DD95F00E029C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740DC7EF1C4DD95F00E029C8 /* CookManTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		740DC7F11C4DD95F00E029C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740DC7FA1C4DD95F00E029C8 /* CookManUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		740DC7EC1C4DD95F00E029C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740DC7D01C4DD95F00E029C8 /* CookMan */;
+			targetProxy = 740DC7EB1C4DD95F00E029C8 /* PBXContainerItemProxy */;
+		};
+		740DC7F71C4DD95F00E029C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 740DC7D01C4DD95F00E029C8 /* CookMan */;
+			targetProxy = 740DC7F61C4DD95F00E029C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		740DC7DD1C4DD95F00E029C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740DC7DE1C4DD95F00E029C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		740DC7E21C4DD95F00E029C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				740DC7E31C4DD95F00E029C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		740DC7FC1C4DD95F00E029C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		740DC7FD1C4DD95F00E029C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		740DC7FF1C4DD95F00E029C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiaoming.CookMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		740DC8001C4DD95F00E029C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CookMan/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiaoming.CookMan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		740DC8021C4DD95F00E029C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CookManTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiaoming.CookManTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookMan.app/CookMan";
+			};
+			name = Debug;
+		};
+		740DC8031C4DD95F00E029C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CookManTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiaoming.CookManTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CookMan.app/CookMan";
+			};
+			name = Release;
+		};
+		740DC8051C4DD95F00E029C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CookManUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiaoming.CookManUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CookMan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		740DC8061C4DD95F00E029C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CookManUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinxiaoming.CookManUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CookMan;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		740DC7CC1C4DD95F00E029C8 /* Build configuration list for PBXProject "CookMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740DC7FC1C4DD95F00E029C8 /* Debug */,
+				740DC7FD1C4DD95F00E029C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		740DC7FE1C4DD95F00E029C8 /* Build configuration list for PBXNativeTarget "CookMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740DC7FF1C4DD95F00E029C8 /* Debug */,
+				740DC8001C4DD95F00E029C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		740DC8011C4DD95F00E029C8 /* Build configuration list for PBXNativeTarget "CookManTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740DC8021C4DD95F00E029C8 /* Debug */,
+				740DC8031C4DD95F00E029C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		740DC8041C4DD95F00E029C8 /* Build configuration list for PBXNativeTarget "CookManUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				740DC8051C4DD95F00E029C8 /* Debug */,
+				740DC8061C4DD95F00E029C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 740DC7C91C4DD95F00E029C8 /* Project object */;
+}
