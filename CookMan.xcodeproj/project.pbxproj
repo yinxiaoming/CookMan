@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		046ADAA41C4E206400E34BE4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADAA31C4E206400E34BE4 /* DetailViewController.m */; };
 		046ADAA81C4E207E00E34BE4 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADAA71C4E207E00E34BE4 /* StarView.m */; };
+		15FBC6E61C4E6181004E15EE /* CeHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6E11C4E6181004E15EE /* CeHuaViewController.m */; };
+		15FBC6E71C4E6181004E15EE /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6E31C4E6181004E15EE /* CenterViewController.m */; };
+		15FBC6E81C4E6181004E15EE /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6E51C4E6181004E15EE /* LeftViewController.m */; };
 		740DC7D61C4DD95F00E029C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D51C4DD95F00E029C8 /* main.m */; };
 		740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D81C4DD95F00E029C8 /* AppDelegate.m */; };
 		740DC7E11C4DD95F00E029C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7E01C4DD95F00E029C8 /* Assets.xcassets */; };
@@ -73,6 +76,12 @@
 		046ADAA31C4E206400E34BE4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		046ADAA61C4E207E00E34BE4 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
 		046ADAA71C4E207E00E34BE4 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		15FBC6E01C4E6181004E15EE /* CeHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeHuaViewController.h; sourceTree = "<group>"; };
+		15FBC6E11C4E6181004E15EE /* CeHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeHuaViewController.m; sourceTree = "<group>"; };
+		15FBC6E21C4E6181004E15EE /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		15FBC6E31C4E6181004E15EE /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		15FBC6E41C4E6181004E15EE /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		15FBC6E51C4E6181004E15EE /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		740DC7D11C4DD95F00E029C8 /* CookMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740DC7D51C4DD95F00E029C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		740DC7D71C4DD95F00E029C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -208,6 +217,19 @@
 			name = StarView;
 			sourceTree = "<group>";
 		};
+		15FBC6DF1C4E6158004E15EE /* LeftVC */ = {
+			isa = PBXGroup;
+			children = (
+				15FBC6E01C4E6181004E15EE /* CeHuaViewController.h */,
+				15FBC6E11C4E6181004E15EE /* CeHuaViewController.m */,
+				15FBC6E21C4E6181004E15EE /* CenterViewController.h */,
+				15FBC6E31C4E6181004E15EE /* CenterViewController.m */,
+				15FBC6E41C4E6181004E15EE /* LeftViewController.h */,
+				15FBC6E51C4E6181004E15EE /* LeftViewController.m */,
+			);
+			name = LeftVC;
+			sourceTree = "<group>";
+		};
 		740DC7C81C4DD95F00E029C8 = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +264,7 @@
 		740DC7D31C4DD95F00E029C8 /* CookMan */ = {
 			isa = PBXGroup;
 			children = (
+				15FBC6DF1C4E6158004E15EE /* LeftVC */,
 				740DC8111C4E2EB000E029C8 /* libWeiboSDK */,
 				740DC8101C4E267000E029C8 /* Main */,
 				740DC80F1C4E247600E029C8 /* Base */,
@@ -508,7 +531,9 @@
 				740DC99E1C4E592500E029C8 /* AFURLRequestSerialization.m in Sources */,
 				740DCAE01C4E592500E029C8 /* UIProgressView+AFNetworking.m in Sources */,
 				740DC99C1C4E592500E029C8 /* AFSecurityPolicy.m in Sources */,
+				15FBC6E71C4E6181004E15EE /* CenterViewController.m in Sources */,
 				740DC99A1C4E592500E029C8 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				15FBC6E81C4E6181004E15EE /* LeftViewController.m in Sources */,
 				740DC9A01C4E592500E029C8 /* AFURLSessionManager.m in Sources */,
 				740DCADE1C4E592500E029C8 /* UIButton+AFNetworking.m in Sources */,
 				740DCADF1C4E592500E029C8 /* UIImageView+AFNetworking.m in Sources */,
@@ -520,6 +545,7 @@
 				740DC8091C4DDAF200E029C8 /* MainViewController.m in Sources */,
 				740DCAE11C4E592500E029C8 /* UIRefreshControl+AFNetworking.m in Sources */,
 				740DC9981C4E592500E029C8 /* AFHTTPRequestOperationManager.m in Sources */,
+				15FBC6E61C4E6181004E15EE /* CeHuaViewController.m in Sources */,
 				740DC99B1C4E592500E029C8 /* AFNetworkReachabilityManager.m in Sources */,
 				740DC9971C4E592500E029C8 /* AFHTTPRequestOperation.m in Sources */,
 			);
