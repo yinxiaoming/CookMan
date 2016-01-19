@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15FBC6D81C4E5A24004E15EE /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6D71C4E5A24004E15EE /* LeftViewController.m */; };
+		15FBC6DD1C4E5A64004E15EE /* CeHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6DA1C4E5A64004E15EE /* CeHuaViewController.m */; };
+		15FBC6DE1C4E5A64004E15EE /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6DC1C4E5A64004E15EE /* CenterViewController.m */; };
 		740DC7D61C4DD95F00E029C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D51C4DD95F00E029C8 /* main.m */; };
 		740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D81C4DD95F00E029C8 /* AppDelegate.m */; };
 		740DC7DF1C4DD95F00E029C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7DD1C4DD95F00E029C8 /* Main.storyboard */; };
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15FBC6D61C4E5A24004E15EE /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		15FBC6D71C4E5A24004E15EE /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		15FBC6D91C4E5A64004E15EE /* CeHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeHuaViewController.h; sourceTree = "<group>"; };
+		15FBC6DA1C4E5A64004E15EE /* CeHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeHuaViewController.m; sourceTree = "<group>"; };
+		15FBC6DB1C4E5A64004E15EE /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
+		15FBC6DC1C4E5A64004E15EE /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		740DC7D11C4DD95F00E029C8 /* CookMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740DC7D51C4DD95F00E029C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		740DC7D71C4DD95F00E029C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FBC6D51C4E5A14004E15EE /* LeftVC */ = {
+			isa = PBXGroup;
+			children = (
+				15FBC6D91C4E5A64004E15EE /* CeHuaViewController.h */,
+				15FBC6DA1C4E5A64004E15EE /* CeHuaViewController.m */,
+				15FBC6DB1C4E5A64004E15EE /* CenterViewController.h */,
+				15FBC6DC1C4E5A64004E15EE /* CenterViewController.m */,
+				15FBC6D61C4E5A24004E15EE /* LeftViewController.h */,
+				15FBC6D71C4E5A24004E15EE /* LeftViewController.m */,
+			);
+			name = LeftVC;
+			sourceTree = "<group>";
+		};
 		740DC7C81C4DD95F00E029C8 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +128,7 @@
 		740DC7D31C4DD95F00E029C8 /* CookMan */ = {
 			isa = PBXGroup;
 			children = (
+				15FBC6D51C4E5A14004E15EE /* LeftVC */,
 				740DC7D71C4DD95F00E029C8 /* AppDelegate.h */,
 				740DC7D81C4DD95F00E029C8 /* AppDelegate.m */,
 				740DC8071C4DDAF200E029C8 /* MainViewController.h */,
@@ -283,9 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */,
+				15FBC6D81C4E5A24004E15EE /* LeftViewController.m in Sources */,
 				740DC7D61C4DD95F00E029C8 /* main.m in Sources */,
+				15FBC6DD1C4E5A64004E15EE /* CeHuaViewController.m in Sources */,
 				740DC80D1C4DE80200E029C8 /* MainTableViewCell.m in Sources */,
 				740DC8091C4DDAF200E029C8 /* MainViewController.m in Sources */,
+				15FBC6DE1C4E5A64004E15EE /* CenterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
