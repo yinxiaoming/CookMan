@@ -10,8 +10,9 @@
 #define PrefixHeader_pch
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
-
-#import "UIUtils.h"
+#define kAppKey @"3708704629"
+#define kRedirectURI @"http://www.baidu.com"
+#define kAccessToken [[NSUserDefaults standardUserDefaults]valueForKey:@"token"]
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

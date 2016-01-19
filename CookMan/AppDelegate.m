@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    
     //初始化主界面视图控制器
     MainViewController*main=[[MainViewController alloc]init];
     
@@ -26,9 +30,45 @@
     self.window.rootViewController=nav;
     
     
+    //调用授权方法
+    [self oauthFunc];
     return YES;
 }
+//创建授权方法
+-(void)oauthFunc{
+    //调试
+    [WeiboSDK enableDebugMode:YES];
+    //向微博注册第三方应用
+    [WeiboSDK registerApp:kAppKey];
+    NSLog(@"token is %@",kAccessToken);
+    //判断如果不存在token
+    if (!kAccessToken) {
+        //初始化请求
+        WBAuthorizeRequest*request=[WBAuthorizeRequest request];
+        //设置权限
+        request.scope=@"all";
+        //设置权限回调页
+        request.redirectURI=kRedirectURI;
+        
+        //发送请求
+        [WeiboSDK sendRequest:request];
+    }
 
+}
+//重写代理方法
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
+//接收响应
+-(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
+    NSString*token=[(WBAuthorizeResponse*)response accessToken];
+    //将token存储在本地
+    [[NSUserDefaults standardUserDefaults]setObject:token forKey:@"token"];
+    //将刷新口令持久化
+    [[NSUserDefaults standardUserDefaults]setObject:[(WBAuthorizeResponse*)response refreshToken] forKey:@"refreshToken"];
+    
+
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

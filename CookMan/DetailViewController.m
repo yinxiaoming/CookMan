@@ -91,7 +91,7 @@
 }
 - (void)starView{
     
-    _starView  = [StarView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
+   // _starView  = [StarView alloc]initWithFrame:CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
     
     
     

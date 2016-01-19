@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "MainTableViewCell.h"
+#import "DetailViewController.h"
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
@@ -50,7 +51,8 @@
 //单元格单击方法，跳转到详情界面
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 //弹出详情界面
-
+    DetailViewController*detail=[[DetailViewController alloc]init];
+    [self.navigationController pushViewController:detail animated:YES];
 
 }
 //导航栏左侧列表按钮
