@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		046ADAA41C4E206400E34BE4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADAA31C4E206400E34BE4 /* DetailViewController.m */; };
 		046ADAA81C4E207E00E34BE4 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADAA71C4E207E00E34BE4 /* StarView.m */; };
-		15FBC6E61C4E6181004E15EE /* CeHuaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6E11C4E6181004E15EE /* CeHuaViewController.m */; };
-		15FBC6E71C4E6181004E15EE /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6E31C4E6181004E15EE /* CenterViewController.m */; };
 		15FBC6E81C4E6181004E15EE /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FBC6E51C4E6181004E15EE /* LeftViewController.m */; };
 		740DC7D61C4DD95F00E029C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D51C4DD95F00E029C8 /* main.m */; };
 		740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D81C4DD95F00E029C8 /* AppDelegate.m */; };
@@ -51,6 +49,12 @@
 		740DCAE01C4E592500E029C8 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC9921C4E592500E029C8 /* UIProgressView+AFNetworking.m */; };
 		740DCAE11C4E592500E029C8 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC9941C4E592500E029C8 /* UIRefreshControl+AFNetworking.m */; };
 		740DCAE21C4E592500E029C8 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC9961C4E592500E029C8 /* UIWebView+AFNetworking.m */; };
+		740DCAED1C4E648800E029C8 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DCAE51C4E648800E029C8 /* MMDrawerBarButtonItem.m */; };
+		740DCAEE1C4E648800E029C8 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DCAE81C4E648800E029C8 /* MMDrawerController.m */; };
+		740DCAEF1C4E648800E029C8 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DCAEA1C4E648800E029C8 /* MMDrawerVisualState.m */; };
+		740DCAF01C4E648800E029C8 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DCAEC1C4E648800E029C8 /* UIViewController+MMDrawerController.m */; };
+		740DCAF41C4E6CED00E029C8 /* AFN.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DCAF31C4E6CED00E029C8 /* AFN.m */; };
+		740DCAF81C4F3ECE00E029C8 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 740DCAF71C4F3ECE00E029C8 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +80,6 @@
 		046ADAA31C4E206400E34BE4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		046ADAA61C4E207E00E34BE4 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
 		046ADAA71C4E207E00E34BE4 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
-		15FBC6E01C4E6181004E15EE /* CeHuaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CeHuaViewController.h; sourceTree = "<group>"; };
-		15FBC6E11C4E6181004E15EE /* CeHuaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CeHuaViewController.m; sourceTree = "<group>"; };
-		15FBC6E21C4E6181004E15EE /* CenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
-		15FBC6E31C4E6181004E15EE /* CenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
 		15FBC6E41C4E6181004E15EE /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		15FBC6E51C4E6181004E15EE /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		740DC7D11C4DD95F00E029C8 /* CookMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +159,18 @@
 		740DC9941C4E592500E029C8 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		740DC9951C4E592500E029C8 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		740DC9961C4E592500E029C8 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		740DCAE41C4E648800E029C8 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		740DCAE51C4E648800E029C8 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		740DCAE61C4E648800E029C8 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		740DCAE71C4E648800E029C8 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		740DCAE81C4E648800E029C8 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		740DCAE91C4E648800E029C8 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		740DCAEA1C4E648800E029C8 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		740DCAEB1C4E648800E029C8 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		740DCAEC1C4E648800E029C8 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		740DCAF21C4E6CED00E029C8 /* AFN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFN.h; sourceTree = "<group>"; };
+		740DCAF31C4E6CED00E029C8 /* AFN.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFN.m; sourceTree = "<group>"; };
+		740DCAF71C4F3ECE00E029C8 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,10 +232,6 @@
 		15FBC6DF1C4E6158004E15EE /* LeftVC */ = {
 			isa = PBXGroup;
 			children = (
-				15FBC6E01C4E6181004E15EE /* CeHuaViewController.h */,
-				15FBC6E11C4E6181004E15EE /* CeHuaViewController.m */,
-				15FBC6E21C4E6181004E15EE /* CenterViewController.h */,
-				15FBC6E31C4E6181004E15EE /* CenterViewController.m */,
 				15FBC6E41C4E6181004E15EE /* LeftViewController.h */,
 				15FBC6E51C4E6181004E15EE /* LeftViewController.m */,
 			);
@@ -264,6 +272,7 @@
 		740DC7D31C4DD95F00E029C8 /* CookMan */ = {
 			isa = PBXGroup;
 			children = (
+				740DCAF71C4F3ECE00E029C8 /* icon.png */,
 				15FBC6DF1C4E6158004E15EE /* LeftVC */,
 				740DC8111C4E2EB000E029C8 /* libWeiboSDK */,
 				740DC8101C4E267000E029C8 /* Main */,
@@ -309,6 +318,8 @@
 		740DC80F1C4E247600E029C8 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				740DCAF11C4E6C8C00E029C8 /* HTTP Request */,
+				740DCAE31C4E648800E029C8 /* MMDrawerController */,
 				740DC8361C4E592300E029C8 /* AFNetworking */,
 			);
 			name = Base;
@@ -386,6 +397,32 @@
 				740DC9961C4E592500E029C8 /* UIWebView+AFNetworking.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		740DCAE31C4E648800E029C8 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				740DCAE41C4E648800E029C8 /* MMDrawerBarButtonItem.h */,
+				740DCAE51C4E648800E029C8 /* MMDrawerBarButtonItem.m */,
+				740DCAE61C4E648800E029C8 /* MMDrawerController+Subclass.h */,
+				740DCAE71C4E648800E029C8 /* MMDrawerController.h */,
+				740DCAE81C4E648800E029C8 /* MMDrawerController.m */,
+				740DCAE91C4E648800E029C8 /* MMDrawerVisualState.h */,
+				740DCAEA1C4E648800E029C8 /* MMDrawerVisualState.m */,
+				740DCAEB1C4E648800E029C8 /* UIViewController+MMDrawerController.h */,
+				740DCAEC1C4E648800E029C8 /* UIViewController+MMDrawerController.m */,
+			);
+			name = MMDrawerController;
+			path = AFNetworking/MMDrawerController;
+			sourceTree = "<group>";
+		};
+		740DCAF11C4E6C8C00E029C8 /* HTTP Request */ = {
+			isa = PBXGroup;
+			children = (
+				740DCAF21C4E6CED00E029C8 /* AFN.h */,
+				740DCAF31C4E6CED00E029C8 /* AFN.m */,
+			);
+			name = "HTTP Request";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,6 +534,7 @@
 				740DC7E41C4DD95F00E029C8 /* LaunchScreen.storyboard in Resources */,
 				740DC7E11C4DD95F00E029C8 /* Assets.xcassets in Resources */,
 				740DC80E1C4DE80200E029C8 /* MainTableViewCell.xib in Resources */,
+				740DCAF81C4F3ECE00E029C8 /* icon.png in Resources */,
 				740DC81F1C4E2EB000E029C8 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,10 +568,11 @@
 				740DC9991C4E592500E029C8 /* AFHTTPSessionManager.m in Sources */,
 				740DC99E1C4E592500E029C8 /* AFURLRequestSerialization.m in Sources */,
 				740DCAE01C4E592500E029C8 /* UIProgressView+AFNetworking.m in Sources */,
+				740DCAF01C4E648800E029C8 /* UIViewController+MMDrawerController.m in Sources */,
 				740DC99C1C4E592500E029C8 /* AFSecurityPolicy.m in Sources */,
-				15FBC6E71C4E6181004E15EE /* CenterViewController.m in Sources */,
 				740DC99A1C4E592500E029C8 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				15FBC6E81C4E6181004E15EE /* LeftViewController.m in Sources */,
+				740DCAED1C4E648800E029C8 /* MMDrawerBarButtonItem.m in Sources */,
 				740DC9A01C4E592500E029C8 /* AFURLSessionManager.m in Sources */,
 				740DCADE1C4E592500E029C8 /* UIButton+AFNetworking.m in Sources */,
 				740DCADF1C4E592500E029C8 /* UIImageView+AFNetworking.m in Sources */,
@@ -542,12 +581,14 @@
 				740DCADD1C4E592500E029C8 /* UIAlertView+AFNetworking.m in Sources */,
 				740DCAE21C4E592500E029C8 /* UIWebView+AFNetworking.m in Sources */,
 				740DCADC1C4E592500E029C8 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				740DCAEF1C4E648800E029C8 /* MMDrawerVisualState.m in Sources */,
 				740DC8091C4DDAF200E029C8 /* MainViewController.m in Sources */,
 				740DCAE11C4E592500E029C8 /* UIRefreshControl+AFNetworking.m in Sources */,
 				740DC9981C4E592500E029C8 /* AFHTTPRequestOperationManager.m in Sources */,
-				15FBC6E61C4E6181004E15EE /* CeHuaViewController.m in Sources */,
 				740DC99B1C4E592500E029C8 /* AFNetworkReachabilityManager.m in Sources */,
+				740DCAEE1C4E648800E029C8 /* MMDrawerController.m in Sources */,
 				740DC9971C4E592500E029C8 /* AFHTTPRequestOperation.m in Sources */,
+				740DCAF41C4E6CED00E029C8 /* AFN.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

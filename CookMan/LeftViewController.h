@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LeftViewController : UIViewController
+#import "WeiboSDK.h"
+@interface LeftViewController : UIViewController<WeiboSDKDelegate>
 
 @end

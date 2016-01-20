@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "LeftViewController.h"
 
+#import "MMDrawerController.h"
 @interface AppDelegate ()
 
 @end
@@ -26,15 +28,22 @@
     //创建导航控制器
     UINavigationController*nav=[[UINavigationController alloc]initWithRootViewController:main];
     nav.view.backgroundColor=[UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+    LeftViewController*left=[[LeftViewController alloc]init];
+    MMDrawerController*drawViewController=[[MMDrawerController alloc]initWithCenterViewController:nav leftDrawerViewController:left];
+    
+    drawViewController.maximumLeftDrawerWidth=kScreenW-100;
+    drawViewController.openDrawerGestureModeMask=MMOpenDrawerGestureModeAll;
+    drawViewController.closeDrawerGestureModeMask=MMCloseDrawerGestureModeAll;
 
-    self.window.rootViewController=nav;
+    self.window.rootViewController=drawViewController;
     
     
     //调用授权方法
-    [self oauthFunc];
+   // [self oauthFunc];
     return YES;
 }
-//创建授权方法
+
+////创建授权方法
 -(void)oauthFunc{
     //调试
     [WeiboSDK enableDebugMode:YES];
@@ -59,7 +68,16 @@
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     return [WeiboSDK handleOpenURL:url delegate:self];
 }
-//接收响应
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [WeiboSDK handleOpenURL:url delegate:self];
+}
+//-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+//{
+//    return [WeiboSDK handleOpenURL:url delegate:self];
+//}
+////接收响应
 -(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
     NSString*token=[(WBAuthorizeResponse*)response accessToken];
     //将token存储在本地
@@ -67,6 +85,7 @@
     //将刷新口令持久化
     [[NSUserDefaults standardUserDefaults]setObject:[(WBAuthorizeResponse*)response refreshToken] forKey:@"refreshToken"];
     
+        NSLog(@"userid is:%@",[(WBAuthorizeResponse *)response userID]);
 
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
