@@ -8,8 +8,11 @@
 
 #import "MainViewController.h"
 #import "MainTableViewCell.h"
+#import "DetailViewController.h"
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    MainTableViewCell*cell;
+}
 @end
 
 @implementation MainViewController
@@ -37,7 +40,7 @@
 }
 //实例化单元格
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MainTableViewCell*cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
+    cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell=[[[NSBundle mainBundle]loadNibNamed:@"MainTableViewCell" owner:self options:nil]lastObject];
     }
@@ -49,8 +52,15 @@
 }
 //单元格单击方法，跳转到详情界面
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//弹出详情界面
-
+    
+    [UIView animateWithDuration:.1 animations:^{
+       
+        //弹出详情界面
+        DetailViewController *detailVC = [[DetailViewController alloc]init];
+        
+        [self.navigationController pushViewController:detailVC animated:YES];
+   
+    }];
 
 }
 //导航栏左侧列表按钮

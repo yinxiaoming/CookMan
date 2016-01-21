@@ -7,11 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044515121C50C25B001559A6 /* ShicaiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044515101C50C25B001559A6 /* ShicaiTableViewCell.m */; };
+		044515131C50C25B001559A6 /* ShicaiTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044515111C50C25B001559A6 /* ShicaiTableViewCell.xib */; };
+		044515171C50C275001559A6 /* MakeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044515151C50C275001559A6 /* MakeTableViewCell.m */; };
+		044515181C50C275001559A6 /* MakeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044515161C50C275001559A6 /* MakeTableViewCell.xib */; };
 		046ADAA41C4E206400E34BE4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADAA31C4E206400E34BE4 /* DetailViewController.m */; };
 		046ADAA81C4E207E00E34BE4 /* StarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADAA71C4E207E00E34BE4 /* StarView.m */; };
+		046ADAAC1C4E292000E34BE4 /* gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046ADAAA1C4E292000E34BE4 /* gray@2x.png */; };
+		046ADAAD1C4E292000E34BE4 /* yellow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 046ADAAB1C4E292000E34BE4 /* yellow@2x.png */; };
+		046ADAAF1C4E2C7B00E34BE4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 046ADAAE1C4E2C7B00E34BE4 /* 1.png */; };
+		046ADB921C5068A600E34BE4 /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADB901C5068A600E34BE4 /* MyTableViewCell.m */; };
+		046ADBD81C50754A00E34BE4 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046ADBD71C50754A00E34BE4 /* MyTableViewCell.xib */; };
+		046ADBE31C50871D00E34BE4 /* LGSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADBE21C50871D00E34BE4 /* LGSegment.m */; };
+		046ADBE91C5087BF00E34BE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADBE81C5087BF00E34BE4 /* ViewController.m */; };
+		046ADBED1C508CFB00E34BE4 /* ShicaiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADBEC1C508CFB00E34BE4 /* ShicaiView.m */; };
+		046ADBF01C508D0600E34BE4 /* MakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 046ADBEF1C508D0600E34BE4 /* MakeView.m */; };
 		740DC7D61C4DD95F00E029C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D51C4DD95F00E029C8 /* main.m */; };
 		740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7D81C4DD95F00E029C8 /* AppDelegate.m */; };
-		740DC7DF1C4DD95F00E029C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7DD1C4DD95F00E029C8 /* Main.storyboard */; };
 		740DC7E11C4DD95F00E029C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7E01C4DD95F00E029C8 /* Assets.xcassets */; };
 		740DC7E41C4DD95F00E029C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 740DC7E21C4DD95F00E029C8 /* LaunchScreen.storyboard */; };
 		740DC7EF1C4DD95F00E029C8 /* CookManTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 740DC7EE1C4DD95F00E029C8 /* CookManTests.m */; };
@@ -39,16 +51,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0445150F1C50C25B001559A6 /* ShicaiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShicaiTableViewCell.h; sourceTree = "<group>"; };
+		044515101C50C25B001559A6 /* ShicaiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShicaiTableViewCell.m; sourceTree = "<group>"; };
+		044515111C50C25B001559A6 /* ShicaiTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShicaiTableViewCell.xib; sourceTree = "<group>"; };
+		044515141C50C275001559A6 /* MakeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTableViewCell.h; sourceTree = "<group>"; };
+		044515151C50C275001559A6 /* MakeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTableViewCell.m; sourceTree = "<group>"; };
+		044515161C50C275001559A6 /* MakeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MakeTableViewCell.xib; sourceTree = "<group>"; };
 		046ADAA01C4E201000E34BE4 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		046ADAA21C4E206400E34BE4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		046ADAA31C4E206400E34BE4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		046ADAA61C4E207E00E34BE4 /* StarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarView.h; sourceTree = "<group>"; };
 		046ADAA71C4E207E00E34BE4 /* StarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarView.m; sourceTree = "<group>"; };
+		046ADAAA1C4E292000E34BE4 /* gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gray@2x.png"; sourceTree = "<group>"; };
+		046ADAAB1C4E292000E34BE4 /* yellow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow@2x.png"; sourceTree = "<group>"; };
+		046ADAAE1C4E2C7B00E34BE4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		046ADB8F1C5068A600E34BE4 /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		046ADB901C5068A600E34BE4 /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		046ADBD71C50754A00E34BE4 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		046ADBE11C50871D00E34BE4 /* LGSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSegment.h; sourceTree = "<group>"; };
+		046ADBE21C50871D00E34BE4 /* LGSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSegment.m; sourceTree = "<group>"; };
+		046ADBE71C5087BF00E34BE4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		046ADBE81C5087BF00E34BE4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		046ADBEB1C508CFB00E34BE4 /* ShicaiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShicaiView.h; sourceTree = "<group>"; };
+		046ADBEC1C508CFB00E34BE4 /* ShicaiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShicaiView.m; sourceTree = "<group>"; };
+		046ADBEE1C508D0600E34BE4 /* MakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeView.h; sourceTree = "<group>"; };
+		046ADBEF1C508D0600E34BE4 /* MakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeView.m; sourceTree = "<group>"; };
 		740DC7D11C4DD95F00E029C8 /* CookMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		740DC7D51C4DD95F00E029C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		740DC7D71C4DD95F00E029C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		740DC7D81C4DD95F00E029C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		740DC7DE1C4DD95F00E029C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		740DC7E01C4DD95F00E029C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		740DC7E31C4DD95F00E029C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		740DC7E51C4DD95F00E029C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,9 +121,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0445150E1C50C237001559A6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0445150F1C50C25B001559A6 /* ShicaiTableViewCell.h */,
+				044515101C50C25B001559A6 /* ShicaiTableViewCell.m */,
+				044515111C50C25B001559A6 /* ShicaiTableViewCell.xib */,
+				044515141C50C275001559A6 /* MakeTableViewCell.h */,
+				044515151C50C275001559A6 /* MakeTableViewCell.m */,
+				044515161C50C275001559A6 /* MakeTableViewCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
 		046ADAA11C4E204400E34BE4 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				046ADB8E1C50688400E34BE4 /* tableViewCell */,
 				046ADAA51C4E207000E34BE4 /* StarView */,
 				046ADAA21C4E206400E34BE4 /* DetailViewController.h */,
 				046ADAA31C4E206400E34BE4 /* DetailViewController.m */,
@@ -103,10 +148,56 @@
 		046ADAA51C4E207000E34BE4 /* StarView */ = {
 			isa = PBXGroup;
 			children = (
+				046ADAA91C4E291200E34BE4 /* StarImg */,
 				046ADAA61C4E207E00E34BE4 /* StarView.h */,
 				046ADAA71C4E207E00E34BE4 /* StarView.m */,
 			);
 			name = StarView;
+			sourceTree = "<group>";
+		};
+		046ADAA91C4E291200E34BE4 /* StarImg */ = {
+			isa = PBXGroup;
+			children = (
+				046ADAAE1C4E2C7B00E34BE4 /* 1.png */,
+				046ADAAA1C4E292000E34BE4 /* gray@2x.png */,
+				046ADAAB1C4E292000E34BE4 /* yellow@2x.png */,
+			);
+			name = StarImg;
+			sourceTree = "<group>";
+		};
+		046ADB8E1C50688400E34BE4 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				046ADBEA1C508CDE00E34BE4 /* mySeg */,
+				046ADBE01C50870B00E34BE4 /* segment */,
+				046ADB8F1C5068A600E34BE4 /* MyTableViewCell.h */,
+				046ADB901C5068A600E34BE4 /* MyTableViewCell.m */,
+				046ADBD71C50754A00E34BE4 /* MyTableViewCell.xib */,
+			);
+			name = tableViewCell;
+			sourceTree = "<group>";
+		};
+		046ADBE01C50870B00E34BE4 /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				046ADBE71C5087BF00E34BE4 /* ViewController.h */,
+				046ADBE81C5087BF00E34BE4 /* ViewController.m */,
+				046ADBE11C50871D00E34BE4 /* LGSegment.h */,
+				046ADBE21C50871D00E34BE4 /* LGSegment.m */,
+			);
+			name = segment;
+			sourceTree = "<group>";
+		};
+		046ADBEA1C508CDE00E34BE4 /* mySeg */ = {
+			isa = PBXGroup;
+			children = (
+				0445150E1C50C237001559A6 /* cell */,
+				046ADBEB1C508CFB00E34BE4 /* ShicaiView.h */,
+				046ADBEC1C508CFB00E34BE4 /* ShicaiView.m */,
+				046ADBEE1C508D0600E34BE4 /* MakeView.h */,
+				046ADBEF1C508D0600E34BE4 /* MakeView.m */,
+			);
+			name = mySeg;
 			sourceTree = "<group>";
 		};
 		740DC7C81C4DD95F00E029C8 = {
@@ -140,7 +231,6 @@
 				740DC80A1C4DE80200E029C8 /* MainTableViewCell.h */,
 				740DC80B1C4DE80200E029C8 /* MainTableViewCell.m */,
 				740DC80C1C4DE80200E029C8 /* MainTableViewCell.xib */,
-				740DC7DD1C4DD95F00E029C8 /* Main.storyboard */,
 				740DC7E01C4DD95F00E029C8 /* Assets.xcassets */,
 				740DC7E21C4DD95F00E029C8 /* LaunchScreen.storyboard */,
 				740DC7E51C4DD95F00E029C8 /* Info.plist */,
@@ -282,10 +372,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046ADAAD1C4E292000E34BE4 /* yellow@2x.png in Resources */,
 				740DC7E41C4DD95F00E029C8 /* LaunchScreen.storyboard in Resources */,
+				046ADAAF1C4E2C7B00E34BE4 /* 1.png in Resources */,
 				740DC7E11C4DD95F00E029C8 /* Assets.xcassets in Resources */,
+				044515131C50C25B001559A6 /* ShicaiTableViewCell.xib in Resources */,
 				740DC80E1C4DE80200E029C8 /* MainTableViewCell.xib in Resources */,
-				740DC7DF1C4DD95F00E029C8 /* Main.storyboard in Resources */,
+				046ADBD81C50754A00E34BE4 /* MyTableViewCell.xib in Resources */,
+				046ADAAC1C4E292000E34BE4 /* gray@2x.png in Resources */,
+				044515181C50C275001559A6 /* MakeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,9 +406,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				046ADAA41C4E206400E34BE4 /* DetailViewController.m in Sources */,
+				046ADB921C5068A600E34BE4 /* MyTableViewCell.m in Sources */,
+				046ADBF01C508D0600E34BE4 /* MakeView.m in Sources */,
 				740DC7D91C4DD95F00E029C8 /* AppDelegate.m in Sources */,
+				044515121C50C25B001559A6 /* ShicaiTableViewCell.m in Sources */,
 				046ADAA81C4E207E00E34BE4 /* StarView.m in Sources */,
+				046ADBE91C5087BF00E34BE4 /* ViewController.m in Sources */,
+				046ADBE31C50871D00E34BE4 /* LGSegment.m in Sources */,
 				740DC7D61C4DD95F00E029C8 /* main.m in Sources */,
+				046ADBED1C508CFB00E34BE4 /* ShicaiView.m in Sources */,
+				044515171C50C275001559A6 /* MakeTableViewCell.m in Sources */,
 				740DC80D1C4DE80200E029C8 /* MainTableViewCell.m in Sources */,
 				740DC8091C4DDAF200E029C8 /* MainViewController.m in Sources */,
 			);
@@ -351,14 +453,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		740DC7DD1C4DD95F00E029C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				740DC7DE1C4DD95F00E029C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		740DC7E21C4DD95F00E029C8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

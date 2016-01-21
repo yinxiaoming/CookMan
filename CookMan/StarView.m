@@ -26,8 +26,8 @@
     
     self = [super initWithFrame:frame];
     if (self) {
+       
         [self creatStarView];
-        
         
     }
     return self;
@@ -43,11 +43,11 @@
     
     //创建灰色星星视图
     
-    UIView *grayV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width*5, height)];
+    UIView *_grayV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width*5, height)];
     //图片平铺展示
-    grayV.backgroundColor = [UIColor colorWithPatternImage:grayImg];
+    _grayV.backgroundColor = [UIColor colorWithPatternImage:grayImg];
     
-    [self addSubview:grayV];
+    [self addSubview:_grayV];
     
     
     yellowV = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width*5, height)];
@@ -59,12 +59,12 @@
     //获取比例系数
     CGFloat scale = self.frame.size.width/(width * 5);
     
-    grayV.transform = CGAffineTransformMakeScale(scale, scale);
+    _grayV.transform = CGAffineTransformMakeScale(scale, scale);
     
     yellowV.transform = CGAffineTransformMakeScale(scale, scale);
     
+    _grayV.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     
-    grayV.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     yellowV.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height);
     
 }
