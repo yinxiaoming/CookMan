@@ -11,8 +11,15 @@
 #define kScreenW [UIScreen mainScreen].bounds.size.width
 #define kScreenH [UIScreen mainScreen].bounds.size.height
 #define kAppKey @"3708704629"
+
 #define kRedirectURI @"http://www.baidu.com"
+
 #define kAccessToken [[NSUserDefaults standardUserDefaults]valueForKey:@"token"]
+
+#define kUserID [[NSUserDefaults standardUserDefaults]valueForKey:@"userID"]
+
+#define kUserName [[NSUserDefaults standardUserDefaults]valueForKey:@"userName"]
+#define kUserImage [[NSUserDefaults standardUserDefaults]valueForKey:@"userImage"]
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

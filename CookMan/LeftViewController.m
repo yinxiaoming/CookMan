@@ -9,14 +9,19 @@
 #import "LeftViewController.h"
 #import "AFN.h"
 #import "AppDelegate.h"
+#import "UIImageView+WebCache.h"
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray*_dataList; //菜单列表数组
     UITableView *_tableView;
+    NSString*_userName; //用户微博昵称
+    
+    
 }
 @end
 
 @implementation LeftViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,6 +39,10 @@
     
     //底部设置按钮
     [self createSetView];
+}
+-(void)indexWithBlock:(Myblock)block
+{
+    _block = block;
 }
 
 //底部设置按钮
@@ -83,11 +92,15 @@
     [self.view addSubview:userView];
     //头像
     UIImageView *userImg = [[UIImageView alloc] initWithFrame:CGRectMake(20, 25, 50, 50)];
-    userImg.image = [UIImage imageNamed:@"smiley_001"];
+    userImg.image = [UIImage imageNamed:@"icon"];
+    //设置圆角
+    userImg.layer.cornerRadius=25;
+    [userImg clipsToBounds];
     [userView addSubview:userImg];
     //登录按钮
-    UIButton *login = [[UIButton alloc] initWithFrame:CGRectMake(90, 25, 80, 50)];
+    UIButton *login = [[UIButton alloc] initWithFrame:CGRectMake(90, 25, 140, 50)];
     [login setTitle:@"点击登录" forState:UIControlStateNormal];
+
     //登陆按钮添加点击方法
     [login addTarget:self action:@selector(loginAct:) forControlEvents:UIControlEventTouchUpInside];
     [userView addSubview:login];
@@ -106,8 +119,36 @@
     [homeView addSubview:backhome];
     [self.view addSubview:homeView];
     
-    
- 
+//判断：当存在昵称时不需要在从网络获取
+  if (!kUserName&&kUserImage) {
+      //网络请求，将按钮标题变成自己微博的名字
+      NSString*url=@"https://api.weibo.com/2/users/show.json";
+     // NSLog(@"token:%@",kAccessToken);
+     // NSLog(@"id:%@",kUserID);
+      
+      //设置请求参数
+      NSDictionary*parameter=@{@"access_token":kAccessToken,@"uid":kUserID};
+      
+
+      [AFN getDataWithUrl:url parameters:parameter block:^(id result) {
+          _userName=[result objectForKey:@"name"];
+          NSString*userImage=[result objectForKey:@"profile_image_url"];
+          //  NSLog(@"------%@-----",result);
+          
+          
+          
+          //存储到本地
+          [[NSUserDefaults standardUserDefaults]setObject:_userName forKey:@"userName"];
+          [[NSUserDefaults standardUserDefaults]setObject:userImage forKey:@"userImage"];
+          
+          
+      }];
+
+}
+    //将获取的微博头像设置为这里的头像
+    [userImg setImageWithURL:[NSURL URLWithString:kUserImage]];
+    //将获取的昵称设置为标题
+    [login setTitle:kUserName forState:UIControlStateNormal];
 }
 -(void)loginAct:(UIButton*)login{
 //弹出微博登陆界面
@@ -117,7 +158,9 @@
    __weak AppDelegate *delegate =[UIApplication sharedApplication].delegate;
     //调用方法
     [delegate oauthFunc];
+    
 }
+#pragma mark ------UITableView
 //创建菜系表格
 - (void)createTableView
 {
@@ -129,12 +172,13 @@
     [self.view addSubview:_tableView];
 }
 
-#pragma mark ------UITableView
+
+//返回单元格数量
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return _dataList.count;
 }
-
+//实例化单元格
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifier = @"cell";
@@ -154,53 +198,21 @@
     return cell;
     
 }
-
+//返回单元格高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 50;
 }
 
-#pragma mark weiboSDK
-//创建授权方法
-//-(void)oauthFunc{
-//    //调试
-//    [WeiboSDK enableDebugMode:YES];
-//    //向微博注册第三方应用
-//    [WeiboSDK registerApp:kAppKey];
-//  //  NSLog(@"token is %@",kAccessToken);
-//    //判断如果不存在token
-////    if (!kAccessToken) {
-//        //初始化请求
-//        WBAuthorizeRequest*request=[WBAuthorizeRequest request];
-//        //设置权限
-//        request.scope=@"all";
-//        //设置权限回调页
-//        request.redirectURI=kRedirectURI;
-//        
-//        //发送请求
-//        [WeiboSDK sendRequest:request];
-////    }
-//    
-//}
+//单元格点击方法
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"indexpath is  %ld--",indexPath.row);
+    
+    
+    //block接收
+    _block(indexPath.row);
 
-
-//重写代理方法
-//-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-//    return [WeiboSDK handleOpenURL:url delegate:self];
-//}
-
-//接收响应
-//-(void)didReceiveWeiboResponse:(WBBaseResponse *)response{
-//    NSString*token=[(WBAuthorizeResponse*)response accessToken];
-//    //将token存储在本地
-//    [[NSUserDefaults standardUserDefaults]setObject:token forKey:@"token"];
-//    //将刷新口令持久化
-//    [[NSUserDefaults standardUserDefaults]setObject:[(WBAuthorizeResponse*)response refreshToken] forKey:@"refreshToken"];
-//    [[NSUserDefaults standardUserDefaults]setObject:[(WBAuthorizeResponse*)response userID] forKey:@"userId"];
-//    NSLog(@"userid is:%@",[(WBAuthorizeResponse *)response userID]);
-//    
-//}
-
+}
 #pragma mark--loadData
 //加载菜谱列表
 -(void)loadData{

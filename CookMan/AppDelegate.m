@@ -9,8 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "LeftViewController.h"
-
-#import "MMDrawerController.h"
+#import "SecondViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -24,17 +23,33 @@
     
     //初始化主界面视图控制器
     MainViewController*main=[[MainViewController alloc]init];
-    
+    //初始化第二个
+    SecondViewController*second=[[SecondViewController alloc]init];
+
     //创建导航控制器
     UINavigationController*nav=[[UINavigationController alloc]initWithRootViewController:main];
+    UINavigationController*nav2=[[UINavigationController alloc]initWithRootViewController:second];
+    
     nav.view.backgroundColor=[UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+    
+        //创建标签控制器
+    UITabBarController*tabbar=[[UITabBarController alloc]init];
+    tabbar.viewControllers=@[nav,nav2];
+    
+    
     LeftViewController*left=[[LeftViewController alloc]init];
-    MMDrawerController*drawViewController=[[MMDrawerController alloc]initWithCenterViewController:nav leftDrawerViewController:left];
+    MMDrawerController*drawViewController=[[MMDrawerController alloc]initWithCenterViewController:tabbar leftDrawerViewController:left];
     
     drawViewController.maximumLeftDrawerWidth=kScreenW-100;
     drawViewController.openDrawerGestureModeMask=MMOpenDrawerGestureModeAll;
     drawViewController.closeDrawerGestureModeMask=MMCloseDrawerGestureModeAll;
-
+    
+    [drawViewController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeBezelPanningCenterView];
+    
+    [drawViewController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+   // [drawViewController openDrawerSide:MMDrawerSideLeft animated:NO completion:nil];
+    
     self.window.rootViewController=drawViewController;
     
     
@@ -84,6 +99,8 @@
     [[NSUserDefaults standardUserDefaults]setObject:token forKey:@"token"];
     //将刷新口令持久化
     [[NSUserDefaults standardUserDefaults]setObject:[(WBAuthorizeResponse*)response refreshToken] forKey:@"refreshToken"];
+    
+    [[NSUserDefaults standardUserDefaults]setObject:[(WBAuthorizeResponse *)response userID] forKey:@"userID"];
     
         NSLog(@"userid is:%@",[(WBAuthorizeResponse *)response userID]);
 

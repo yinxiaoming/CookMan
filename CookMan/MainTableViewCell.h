@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MainModel.h"
 @interface MainTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *name;
 @property (weak, nonatomic) IBOutlet UIImageView *dishImgV;
@@ -18,4 +18,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pictureImg;
 @property (weak, nonatomic) IBOutlet UILabel *picture;
 
+//导入model
+@property(nonatomic,retain)MainModel*model;
 @end
